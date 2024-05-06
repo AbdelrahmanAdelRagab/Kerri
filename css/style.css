@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400&display=swap');
+body{
+    font-family: 'Nunito Sans', sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Montserrat', sans-serif;
+}
+section{
+    padding: 80px 0;
+}
+:root{
+    --rose-color:#e65f78 ;
+}
+.rose-color{
+    color: var(--rose-color);
+}
+.navbar-nav .nav-link.active ,.navbar-nav .nav-link:hover{
+    color: var(--rose-color);
+    font-weight: 800;
+}
+#home{
+    background: url('../images/header-bg.jpg') center fixed no-repeat;
+    background-size: cover;
+
+}
+.layer{
+    min-height: 100vh;
+   
+}
+#home .download{
+    all: unset;
+    display: inline-block;
+    cursor: pointer;
+    transition:all .5s ;
+    padding: 15px 25px;
+    border: 3px solid #fff;
+    border-radius:50px ;
+    -webkit-border-radius:50px ;
+    -moz-border-radius:50px ;
+    -ms-border-radius:50px ;
+    -o-border-radius:50px ;
+    -webkit-transition:all .5s ;
+    -moz-transition:all .5s ;
+    -ms-transition:all .5s ;
+    -o-transition:all .5s ;
+}
+#home .download:hover{
+    background-color: white;
+    color: #000;
+}
+#home .scroll{
+    width: 30px;
+    height: 50px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    position: absolute;
+    bottom: 30px;
+    left:50%;
+    animation: animate 1s linear infinite;
+    transform:translateX(-50%) ;
+    -webkit-transform:translateX(-50%) ;
+    -moz-transform:translateX(-50%) ;
+    -ms-transform:translateX(-50%) ;
+    -o-transform:translateX(-50%) ;
+    -webkit-animation: animate 1s linear infinite;
+}
+#home .scroll::after{
+    content: '';
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    width: 3px;
+    height: 13px;
+    background-color: #fff;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+@keyframes animate{
+    0%{
+        bottom: 30px;
+    }
+    50%{
+        bottom: 60px;
+    }
+    100%{
+        bottom: 30px;
+    }
+}
+.setting{
+    position: fixed;
+    top: 30%;
+    left: 0;
+    color: #fff;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    border-radius: 0 5px 5px 0;
+    -webkit-border-radius: 0 5px 5px 0;
+    -moz-border-radius: 0 5px 5px 0;
+    -ms-border-radius: 0 5px 5px 0;
+    -o-border-radius: 0 5px 5px 0;
+}
+.up-home{
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    color: #fff;
+    background-color: var(--rose-color);
+    width: 30px;
+    height: 35px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.social li{
+    width: 30px;
+    height: 30px;
+    border: 2px solid #aaa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+#services h3{
+    position: relative;
+}
+#services h3::after{
+          content: '';
+          width: 50px;
+          height: 3px;
+          background-color: var(--rose-color);
+          position: absolute;
+          top: calc(100% + 5px);
+          left: 50%;
+          transition: width .7s;
+          transform:translateX(-50%)      ;
+          -webkit-transform:translateX(-50%) ;
+          -moz-transform:translateX(-50%) ;
+          -ms-transform:translateX(-50%) ;
+          -o-transform:translateX(-50%) ;
+          -webkit-transition: width .7s;
+          -moz-transition: width .7s;
+          -ms-transition: width .7s;
+          -o-transition: width .7s;
+}
+#services .card:hover h3::after{
+    width: 100px;
+}
+.hire{
+    all: unset;
+    cursor: pointer;
+    background-color: var(--rose-color);
+    padding: 10px 25px;
+    color: white;
+    display: inline-block;
+    text-transform: uppercase;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.carousel-indicators [data-bs-target]{
+    all:unset;
+    width: 15px;
+    height: 5px;
+    background-color: var(--rose-color);
+    opacity: .7;
+    margin-inline:2px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    cursor: pointer;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+.carousel-indicators .active{
+    opacity: 1;
+    width: 25px;
+    cursor: pointer;
+}
+#portfolio .nav-pills .nav-link.active ,#portfolio .nav-pills .nav-link:hover {
+    background-color: var(--rose-color);
+    color: #fff;
+}
+#portfolio .nav-pills .nav-link{
+    color: #000;
+    border-radius: 50px;
+    padding: 2px 15px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+.text{
+    top: 150%;
+}
+#portfolio .image img{
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+#portfolio .image:hover img{
+ transform: scale(1.2);
+ -webkit-transform: scale(1.2);
+ -moz-transform: scale(1.2);
+ -ms-transform: scale(1.2);
+ -o-transform: scale(1.2);
+}
+#portfolio .image:hover .layer{
+    opacity: 1 !important;
+}
+#portfolio .image .layer{
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+#portfolio .image:hover .text{
+    top: 50%;
+    
+}
+#portfolio .image .text{
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+    color: #fff;
+}
